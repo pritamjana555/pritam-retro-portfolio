@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 256 47% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 273 47% 58%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 256 47% 58%;
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-retro-black text-white font-pixel antialiased;
+    image-rendering: pixelated;
+  }
+  
+  html, body, #root {
+    @apply h-full w-full overflow-hidden;
+  }
+}
+
+@layer components {
+  .pixel-box {
+    @apply border-4 border-white p-4 bg-retro-black bg-opacity-70;
+    image-rendering: pixelated;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .pixel-button {
+    @apply bg-retro-purple text-white px-4 py-2 border-2 border-white transition-all;
+    image-rendering: pixelated;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .pixel-button:hover {
+    @apply translate-y-0.5 translate-x-0.5;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .pixel-progress-bar {
+    @apply w-full h-4 bg-gray-800 border-2 border-white;
+  }
+  
+  .pixel-progress-value {
+    @apply h-full bg-retro-purple;
+  }
+}
+
+.terrain {
+  @apply absolute bottom-0 w-full h-24 bg-retro-purple-dark;
+  mask-image: url('data:image/svg+xml,<svg viewBox="0 0 100 25" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 L100,0 L100,15 C75,20 75,15 50,15 C25,15 25,20 0,15 L0,0 Z" fill="black"/></svg>');
+  mask-size: 40px 100%;
+  mask-repeat: repeat-x;
+}
+
+.loading-bar {
+  height: 20px;
+  border: 4px solid white;
+  width: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.loading-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+  animation: progress-fill 3s forwards;
+}
+
+.retro-background {
+  @apply fixed inset-0 bg-retro-purple;
+  background-image: 
+    linear-gradient(0deg, rgba(110,89,165,1) 0%, rgba(126,105,171,0.8) 25%, rgba(155,135,245,0.5) 100%),
+    repeating-linear-gradient(
+      to right,
+      transparent 0,
+      transparent 40px,
+      rgba(0, 0, 0, 0.05) 40px,
+      rgba(0, 0, 0, 0.05) 80px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 40px,
+      rgba(0, 0, 0, 0.05) 40px,
+      rgba(0, 0, 0, 0.05) 80px
+    );
+  z-index: -1;
+}
+
+.cityscape {
+  @apply fixed bottom-0 w-full h-48;
+  background-image: url('data:image/svg+xml,<svg viewBox="0 0 100 25" xmlns="http://www.w3.org/2000/svg"><path d="M0,25 L5,25 L5,15 L10,15 L10,10 L15,10 L15,5 L20,5 L20,15 L25,15 L25,20 L30,20 L30,15 L35,15 L35,10 L40,10 L40,5 L45,5 L45,10 L50,10 L50,15 L55,15 L55,5 L60,5 L60,15 L65,15 L65,20 L70,20 L70,10 L75,10 L75,5 L80,5 L80,15 L85,15 L85,20 L90,20 L90,15 L95,15 L95,25 L100,25 Z" fill="black"/></svg>');
+  background-repeat: repeat-x;
+  background-size: 300px 100%;
+  opacity: 0.5;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+.stars {
+  @apply fixed inset-0;
+  background-image: radial-gradient(2px 2px at calc(random()*100%) calc(random()*100%), white, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at calc(random()*100%) calc(random()*100%), white, rgba(0,0,0,0)),
+                    radial-gradient(2px 2px at calc(random()*100%) calc(random()*100%), white, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.5;
+  z-index: -2;
+}
+
+.animate-pulse {
+  animation: pulse 1s infinite;
+ }
+@keyframes pulse {
+   0%, 100% { opacity: 1; }
+   50% { opacity: 0; }
+}
