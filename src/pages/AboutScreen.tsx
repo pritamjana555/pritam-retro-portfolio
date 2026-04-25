@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import PixelButton from "../components/PixelButton";
 import SpeechBubble from "../components/SpeechBubble";
 import bgimage from "../assets/images/background.jpg";
-import profileImage from "../assets/images/image.png";
+import profileImage from "../assets/images/IMG-20240925-WA0059.jpg";
 import { Zap } from "lucide-react";
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
