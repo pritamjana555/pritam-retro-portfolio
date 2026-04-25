@@ -349,7 +349,7 @@ const CompletionScreen = ({ onRestart }: CompletionScreenProps) => {
               <PixelButton
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1BmSKe0MUmLMzCcX6l9-5CbHUwoYEP2OK/view?usp=drive_link",
+                    "https://drive.google.com/file/d/1DkesjQ2QFG4PzciPYgIZ64HxdIy2n4mD/view?usp=sharing",
                     "_blank"
                   )
                 }
