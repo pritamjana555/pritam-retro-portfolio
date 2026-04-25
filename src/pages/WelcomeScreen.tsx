@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import PixelButton from '../components/PixelButton';
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
-import BgImage from "../assets/images/welcome-background.jpg"
+import BgImage from "../assets/images/Welcome-background.png"
 
 interface WelcomeScreenProps {
   onStart: () => void;
