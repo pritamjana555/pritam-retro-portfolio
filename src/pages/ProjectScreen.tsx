@@ -13,6 +13,18 @@ interface ProjectSectionProps {
 
 const projects = [
   {
+    name: "College Compass",
+    techStack: "Next.js, Tailwind CSS, TypeScript, Prisma ORM, Lucide React",
+    icon: <Zap className="text-yellow-400" size={20} />,
+    details: [
+      "Built a full-stack college discovery platform that helps students search, filter, compare, and shortlist colleges across India using course, fees, location, rankings, placements, and reviews.",
+      "Implemented secure authentication with signup, login, logout, protected routes, saved colleges, personal notes, and saved comparisons.",
+      "Developed a responsive Next.js and TypeScript application with Prisma/PostgreSQL, detailed college profiles, course listings, placement statistics, student reviews, search suggestions, and side-by-side comparison tools."
+    ],
+    liveLink: "https://college-compass-six-blond.vercel.app/",
+    githubLink: "https://github.com/pritamjana555/college-compass",
+  },
+  {
     name: "Interview Pro",
     techStack: "React.js, Tailwind CSS, JavaScript, Express.Js, MongoDB, Radix UI",
     icon: <Zap className="text-yellow-400" size={20} />,
