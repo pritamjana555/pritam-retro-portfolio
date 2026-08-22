@@ -36,8 +36,8 @@ This project is powered by a *stack-tacular* lineup of modern tools, carefully c
 
 ## 🔗 Links
 
-- **GitHub**: [https://github.com/Pritam1202/retro-style=portfolio](https://github.com/Pritam1202/retro-style=portfolio)
-- **Live Preview**: [Pritam-Jana.vercel.app](https://Pritam-Jana.vercel.app)
+- **GitHub**: [https://github.com/Pritam1202/retro-style=portfolio](https://github.com/pritamjana555/pritam-retro-portfolio)
+- **Live Preview**: [Pritam-Jana.vercel.app](https://pritam-jana.vercel.app/)
 - **Email**: Got questions? Ping me at `PritamisJana@example.com` for a *byte-sized* chat.
 
 ## 🕹️ How to Run This Locally
