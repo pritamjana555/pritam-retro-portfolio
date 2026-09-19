@@ -17,7 +17,7 @@ const skills = [
     icon: <Zap className="text-yellow-400" size={20} />,
     items: [
       { name: "JavaScript", level: 95, icon: "🌐" },
-      { name: "TypeScript", level: 65, icon: "📘" },
+      { name: "TypeScript", level: 85, icon: "📘" },
       { name: "C", level: 85, icon: "💾" },
       { name: "C++", level: 85, icon: "⚙️" },
     ],
@@ -26,6 +26,7 @@ const skills = [
     category: "FRAMEWORKS",
     icon: <Trophy className="text-green-400" size={20} />,
     items: [
+      { name: "Next", level: 85, icon: "▲" },
       { name: "React", level: 85, icon: "⚛️" },
       { name: "Node", level: 85, icon: "🟢" },
       { name: "Express", level: 85, icon: "🚀" },
@@ -37,6 +38,7 @@ const skills = [
     icon: <Star className="text-blue-400" size={20} />,
     items: [
       { name: "MongoDB", level: 80, icon: "🍃" },
+      { name: "Prisma ORM", level: 85, icon: "🔺" },
     ],
   },
   {
@@ -44,9 +46,17 @@ const skills = [
     icon: <Gamepad2 className="text-purple-400" size={20} />,
     items: [
       { name: "VS Code", level: 90, icon: "💻" },
+      { name: "Postman", level: 85, icon: "📮" },
       { name: "Git/GitHub", level: 85, icon: "📊" },
       { name: "AWS", level: 70, icon: "☁️" },
       { name: "Linux", level: 80, icon: "🐧" },
+    ],
+  },
+  {
+    category: "SERVERS",
+    icon: <Gamepad2 className="text-purple-400" size={20} />,
+    items: [
+      { name: "Web Socket", level: 70, icon: "🔌" },
     ],
   },
 ];
