@@ -13,6 +13,19 @@ interface ProjectSectionProps {
 
 const projects = [
   {
+    name: "Broadroom",
+    techStack: "Next.js, TypeScript, Tailwind CSS, Web Socket, Express.js, Prisma ORM",
+    icon: <Zap className="text-yellow-400" size={20} />,
+    details: [
+      "Built a full-stack real-time chat platform where users create and join rooms with shareable codes and message each other instantly.",
+      " Implemented secure authentication with credentials and Google OAuth via NextAuth, with JWT-verified WebSocket connections, room admin controls (create, join, leave, delete), and a room-code invite system.",
+      " Developed a responsive Next.js and TypeScript application with a Node.js WebSocket server, an Express REST API, and Prisma/PostgreSQL, featuring live messaging with optimistic UI updates, persistent chat history, and per-room message broadcasting.",
+      "Deployed the frontend on Vercel and the HTTP and WebSocket backends as separate Render services, configuring CORS, environment variables, and cross-origin token-based authentication"
+    ],
+    liveLink: "https://broadcast-room.vercel.app/",
+    githubLink: "https://github.com/pritamjana555/broadcast-room",
+  },
+  {
     name: "College Compass",
     techStack: "Next.js, Tailwind CSS, TypeScript, Prisma ORM, Lucide React",
     icon: <Zap className="text-yellow-400" size={20} />,
